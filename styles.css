@@ -34,8 +34,9 @@ nav ul li{
     margin: 0 5px;
 }
 .contact{
-    color: black;
-    background-color: white;
+    color: white;
+    font-weight: bold;
+    background-color: steelblue;
     padding: 5px 10px;
     border-radius: 20px;
     text-transform: uppercase;
