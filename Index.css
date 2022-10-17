@@ -1,0 +1,251 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    max-width: 100%;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+
+
+nav{
+    width: 100%;
+    align-items: center;
+    color: white;
+    position:absolute;
+    z-index: 1;
+}
+label.logo{
+    font-weight: bold;
+    padding:0 50px;
+    font-size: 20px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display:inline-block;
+    margin: 0 5px;
+}
+.contact{
+    color: black;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+
+
+.creative{
+    max-width: 100%;
+    max-height: 100%;
+}
+.creative img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    vertical-align: -webkit-baseline-middle;
+}
+.creative h1{
+    position: absolute;
+    text-align: center;
+    left: 36%;
+    top: 31%;
+    text-transform: uppercase;
+    color: white;
+    z-index: 1;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+.container img{
+    width: 100%;
+    height: 100%;
+}
+.text{
+    text-align: center;
+    padding: 8rem 4rem;
+}
+.learn{
+    text-transform: uppercase;
+}
+
+
+.container1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    max-width: 100%;
+}
+.container1 img{
+    width: 100%;
+    height: 100%;
+}
+.text1{
+    position: absolute;
+    top: 65%;
+    left: 11%;
+    right: 61%;
+    text-align: center;
+}
+.text2{
+    position: absolute;
+    top: 65%;
+    left: 54%;
+    right: 8%;
+    text-align: center;
+}
+
+
+
+.station{
+    padding: 20px 20px;
+}
+.title{
+    text-align: center;
+    text-transform: uppercase;
+}
+.testimonials{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    text-align: center;
+}
+.testimonials img{
+    border-radius: 50%;
+    width: 25%;
+    height: 25%;
+}
+
+
+
+.container2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 100%;
+}
+.Orient img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.container3{
+    background-color: aquamarine;
+}
+.finish{
+    display: grid;
+    place-items: center;
+    color: rgb(91, 173, 146);
+}
+.container3 nav{
+    display: grid;
+    place-items: center;
+    color: rgb(91, 173, 146);
+    
+}
+.container3 ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+
+
+/* responsive design */
+
+@media screen and (max-width: 375px) {
+    
+
+    .creative h1{
+        padding: 1rem 1rem;
+        top: 3%;
+        right: 10%;
+        left: 10%;
+        text-align: center;
+    }
+
+
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .checkbtn{
+        display: block;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: white;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    .container1{
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+    .text1{
+        top: 23%;
+        left: 5%;
+        right: 5%;
+    }
+    .text2{
+        top: 75%;
+        left: 5%;
+        right: 5%;
+    }
+
+
+    .testimonials{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+
+    .container2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 100%;
+    }
+
+}
